@@ -1,7 +1,10 @@
 #include <iostream>
 #include <fstream>
 
+#include "MapCreator.h"
+
 int main(int argc, char const *argv[]) {
+    /*
     FILE* outimage = fopen("../maps/map1.pgm", "wb");
 
     // P2 for text, P5 for bit
@@ -20,5 +23,9 @@ int main(int argc, char const *argv[]) {
     }
     
     fclose(outimage);
+    */
+    MapCreator Map1(1000, 1000, 0.1);
+    Map1.createObstacles(10);
+
     return 0;
 }

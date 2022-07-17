@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/octominus/ROS/ws_map_creator/src/map_creator/build/devel/setup.sh
