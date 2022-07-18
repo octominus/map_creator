@@ -28,14 +28,15 @@ private:
     int _max_c_point = 1000;
     int _min_c_point = 0;
 
-    std::queue<Circle> *_circle_list;
+    std::vector<Circle> *_circle_list;
 
     void createEmptyMap();
 public:
-    MapCreator(int height, int width, int res);
-    Circle createRandomCircle(bool c_insec);
+    MapCreator(int height, int width);
+    Circle createRandomCircle();
     void createObstacles(int n_circle);
     void drawCircle2Map(Circle obj);
+    char* getData();
     ~MapCreator();
 };
 
