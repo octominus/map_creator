@@ -1,8 +1,0 @@
-prefix=/home/octominus/ROS/ws_map_creator/src/map_creator/build/devel
-
-Name: map_creator
-Description: Description of map_creator
-Version: 0.0.0
-Cflags: -I/home/octominus/ROS/ws_map_creator/src/map_creator/include
-Libs: -L${prefix}/lib -lmap_creator
-Requires: roscpp rospy std_msgs
