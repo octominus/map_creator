@@ -3,9 +3,16 @@
 
 #include <iostream>
 #include <vector>
-#include <queue>
 #include <random>
 #include <chrono>
+
+#define MAX_HEIGHT 10000
+#define MAX_WIDTH 10000
+#define MAX_RESOLATION 1.0
+
+#define DEFAULT_HEIGHT 1000
+#define DEFAULT_WIDTH 1000
+#define DEFAULT_RESOLATION 0.1
 
 struct Circle
 {
@@ -16,13 +23,13 @@ struct Circle
 
 class MapCreator {
 private:
-    int _m_height = 1000; // default 1000 px
-    int _m_width = 1000; // default 1000 px
-    float _m_res = 0.1; // default 0.1 m/px
+    int _m_height = DEFAULT_HEIGHT; // default 1000 px
+    int _m_width = DEFAULT_WIDTH; // default 1000 px
+    float _m_res = DEFAULT_RESOLATION; // default 0.1 m/px
 
     char *_m_data_ptr;
 
-    int _max_radius = 500; // default for 1 circle
+    int _max_radius = DEFAULT_HEIGHT / 2; // default for 1 circle
     int _min_radius = 25;  // default 25 px
 
     int _max_c_point = 1000;
